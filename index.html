@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин электроники</title>
 </head>
+
 <body>
-    <p>Моя первая страница</p>
-    <p>Моя первая страница</p>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Главная страница</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="popular-tovar">
+            <h3>Популярные товары</h3>
+
+            <div class="tovar-list">
+                <div class="tovar-card">
+                    <div class="tovar-img">
+                        <img src="img/микро.img" alt="" width="400px" height="250px">
+                    </div>
+                    <div class="tovar-info">
+                        <button>Купить</button>
+                        <p>Микроволновая печь Daewoo DG</p>
+                        <a href="product1.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="tovar-card">
+                    <div class="tovar-img">
+                        <img src="img/1.webp" alt="" width="200px" height="250px">
+                    </div>
+                    <div class="tovar-info">
+                        <button>Купить</button>
+                        <p>iphone 17 pro 256gb sim+Esim</p>
+                        <a href="product2.html">Подробнее</a>
+                    </div>
+                 </div>
+                <div class="tovar-card">
+                    <div class="tovar-img">
+                        <img src="img/2.webp" alt="" width="200px" height="250px">
+                    </div>
+                    <div class="tovar-info">
+                        <button id = buyBtn>Купить</button>
+                        <p>Samsung S25 ultra 256gb </p>
+                        <a href="product3.html">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <footer>
+            <p align="center"> Подвал сайта</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script>
+            const btn = document.getElementById('buyBtn')
+            btn.addEventListener('click', (e)=>{
+                alert('Поздравляем с покупкой!')
+            })
+        </script>
+    </main>
 </body>
+
 </html>
